@@ -1,8 +1,7 @@
-describe('Optional Parameters', function(){
-  it('should support null and undefined', function() {
-
+describe('Optional Parameters', function () {
+  it('should support null and undefined', function () {
     function sayHello(name?: string | null) {
-      if(name){
+      if (name) {
         return `Hello ${name}!`;
       } else {
         return 'Hello Stranger!';
@@ -11,9 +10,8 @@ describe('Optional Parameters', function(){
 
     console.info(sayHello('Iqbal'));
 
-    const name: string | undefined = undefined
+    const name: string | undefined = undefined;
     console.info(sayHello(name));
     console.info(sayHello(null));
-
   });
 });

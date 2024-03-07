@@ -1,11 +1,11 @@
 export enum CustomerType {
-  REGULAR= 'REGULAR',
+  REGULAR = 'REGULAR',
   GOLD = 'GOLD',
-  PLATINUM = 'PLATINUM'
+  PLATINUM = 'PLATINUM',
 }
 
 export type Customer = {
   id: number;
   name: string;
   type: CustomerType;
-}
+};

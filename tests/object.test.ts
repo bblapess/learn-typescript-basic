@@ -1,9 +1,8 @@
 describe('Object', function () {
-  it('should support in typescript', function() {
-
-    const person : {id: number, name: string, hobbies?: string[]} = {
+  it('should support in typescript', function () {
+    const person: { id: number; name: string; hobbies?: string[] } = {
       id: 1,
-      name: 'Iqbal'
+      name: 'Iqbal',
     };
 
     console.info(person);
@@ -12,6 +11,5 @@ describe('Object', function () {
     person.name = 'Pamula';
 
     console.info(person);
-
   });
 });
